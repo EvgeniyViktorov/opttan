@@ -4,12 +4,13 @@
 }
 
 body {
-    margin: 0 0 0 0;
+    max-width: 100%;
     font-family: "SparkasseRegular", sans-serif;
-    font-size: 1.3em;
+    font-size: 3em;
 }
 
 #dsv-line {
+    max-width: 100%;
     position: fixed;
     background-color: #ff0000;
     width: 100%;
@@ -24,13 +25,13 @@ body {
 
 #rsct-opttan-button-slower {
     margin-left: 8%;
-    border-radius: 15px;
+    border-radius: 25px;
     text-shadow: 1px 1px 1px #ffffff;
     color: #ff0000;
-    font-size: 37px;
+    font-size: 2em;
     background: #ffffff;
-    padding: 10px 25px 10px 25px;
-    border: solid #e6e6e6 1px;
+    padding: 2% 6% 2% 6%;
+    border: solid #e6e6e6 5px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -43,13 +44,13 @@ body {
 
 #rsct-opttan-button-faster {
     margin-left: 3%;
-    border-radius: 15px;
+    border-radius: 25px;
     text-shadow: 1px 1px 1px #ffffff;
     color: #ff0000;
-    font-size: 37px;
+    font-size: 2em;
     background: #ffffff;
-    padding: 10px 20px 10px 20px;
-    border: solid #e6e6e6 1px;
+    padding: 2% 5% 2% 5%;
+    border: solid #e6e6e6 5px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -61,14 +62,14 @@ body {
 }
 
 #rsct-opttan-button-smaller {
-    margin-left: 18%;
-    border-radius: 15px;
+    margin-left: 15%;
+    border-radius: 25px;
     text-shadow: 1px 1px 1px #ffffff;
     color: #ff0000;
-    font-size: 37px;
+    font-size: 2em;
     background: #ffffff;
-    padding: 10px 25px 10px 25px;
-    border: solid #e6e6e6 1px;
+    padding: 2% 6% 2% 6%;
+    border: solid #e6e6e6 5px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -81,13 +82,13 @@ body {
 
 #rsct-opttan-button-larger {
     margin-left: 3%;
-    border-radius: 15px;
+    border-radius: 25px;
     text-shadow: 1px 1px 1px #ffffff;
     color: #ff0000;
-    font-size: 37px;
+    font-size: 2em;
     background: #ffffff;
-    padding: 10px 20px 10px 20px;
-    border: solid #e6e6e6 1px;
+    padding: 2% 5% 2% 5%;
+    border: solid #e6e6e6 5px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -274,6 +275,35 @@ body {
 .rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-63 #rsct-opttan-speedo { font-size: 41.5px; }
 .rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-64 { width: 14.2cm; height: 8.20938cm; }
 .rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-64 #rsct-opttan-speedo { font-size: 42px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-65 { width: 14.4cm; height: 8.33938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-65 #rsct-opttan-speedo { font-size: 42.5px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-66 { width: 14.6cm; height: 8.44938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-66 #rsct-opttan-speedo { font-size: 43px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-67 { width: 14.8cm; height: 8.55938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-67 #rsct-opttan-speedo { font-size: 43.5px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-68 { width: 15.0cm; height: 8.67938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-68 #rsct-opttan-speedo { font-size: 44px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-69 { width: 15.2cm; height: 8.78938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-69 #rsct-opttan-speedo { font-size: 44.5px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-70 { width: 15.4cm; height: 8.89938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-70 #rsct-opttan-speedo { font-size: 45px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-71 { width: 15.6cm; height: 9.00938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-71 #rsct-opttan-speedo { font-size: 45.5px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-72 { width: 15.8cm; height: 9.11938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-72 #rsct-opttan-speedo { font-size: 46px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-73 { width: 16.0cm; height: 9.22938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-73 #rsct-opttan-speedo { font-size: 46.5px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-74 { width: 16.2cm; height: 9.34938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-74 #rsct-opttan-speedo { font-size: 47px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-75 { width: 16.4cm; height: 9.45938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-75 #rsct-opttan-speedo { font-size: 47.5px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-76 { width: 16.6cm; height: 9.56938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-76 #rsct-opttan-speedo { font-size: 48px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-77 { width: 16.8cm; height: 9.67938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-77 #rsct-opttan-speedo { font-size: 48.5px;}
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-78 { width: 17.0cm; height: 9.79938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-78 #rsct-opttan-speedo { font-size: 49px;}
+
 .rsct-opttan_m #rsct-opttan-clk1, .rsct-opttan_m #rsct-opttan-data0, .rsct-opttan_m #rsct-opttan-data1, .rsct-opttan_m #rsct-opttan-data2, .rsct-opttan_m #rsct-opttan-data3, .rsct-opttan_m #rsct-opttan-app-slower, .rsct-opttan_m #rsct-opttan-app-faster { width: 16%; margin: 0 2%; height: 100%; }
 .rsct-opttan_m #rsct-opttan-data0 { left: 20%; }
 .rsct-opttan_m #rsct-opttan-data1 { left: 40%; }
@@ -428,7 +458,7 @@ body {
 #rsct-opttan-app-slower, #rsct-opttan-app-faster { position: absolute; cursor: pointer; z-index: 13; /* Fix IE 8-10 */ background: #000; opacity: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
 
 /* Other */
-#rsct-opttan-device { position: relative; margin: 5% auto; z-index: 2; }
+#rsct-opttan-device { width: 100%; position: relative; margin: 5% auto; z-index: 2; }
 
 #rsct-opttan-bg-image {  width: 100%; height: 100%; }
 
