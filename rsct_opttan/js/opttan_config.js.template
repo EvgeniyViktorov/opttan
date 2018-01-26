@@ -1,0 +1,117 @@
+/**
+ * (c) 2008-2015 REINER SCT
+ *
+ * $Date: Mon Mar 7 13:55:43 2016 +0100$
+ * $Rev: 4.2.0$
+ */
+
+var opttanConfig = {};
+opttanConfig.text = {};
+
+/* RSCT Opttan Version */
+
+opttanConfig.version = "4_2_0";
+
+/* Pfad zum Gif-Generator */
+
+opttanConfig.gifGeneratorPath = false;
+
+/* Gif FPS */
+
+opttanConfig.gifFPS = 15;
+
+/* Beschreibung für das OpticTAN Mini Gerät */
+
+opttanConfig.opttanMiniHeader = 'tanJack optic';
+opttanConfig.opttanMiniContent = '<div class="osppinfoinhalt"><img src="../rsct_opttan/images/opttan_mini-' + opttanConfig.version + '.png" alt="" /> <img src="../rsct_opttan/images/opttan_mini_sx-' + opttanConfig.version + '.png" alt="" /><ul><li>Stecken Sie Ihre Karte in den TAN-Generator und drücken Sie die Taste F.</li><li>Halten Sie den TAN-Generator vor die animierte Grafik.</li><li>Beachten Sie bitte die Anzeige des TAN-Generators.</li></ul></div>';
+
+/* Beschreibung für das OpticTAN Mini (rotiert) Gerät */
+
+opttanConfig.opttanMiniRHeader = 'tanJack optic';
+opttanConfig.opttanMiniRContent = '<div class="osppinfoinhalt"><img src="../rsct_opttan/images/opttan_mini_r-' + opttanConfig.version + '.png" alt="" /><ul><li>Stecken Sie Ihre Karte in den TAN-Generator und drücken Sie die Taste F.</li><li>Halten Sie den TAN-Generator vor die animierte Grafik.</li><li>Beachten Sie bitte die Anzeige des TAN-Generators.</li></ul></div>';
+
+/* Anzeige der OpticTAN (Mini) Grafik ein- oder ausschalten */
+
+opttanConfig.showOpttanMini   = true;
+
+/* Ein-/Ausklappen-Knopf anzeigen */
+
+opttanConfig.foldButton   = true;
+
+/* OpticTAN (mini) Grafik per Vorgabe ein- oder ausklappen */
+
+opttanConfig.foldOpttanMini   = false;
+
+/* Kopfzeile "TAN-Generierung" anzeigen */
+
+opttanConfig.showHeader = false;
+
+/* Vorgabe Frame-Dauer in ms für die opticTAN-Animation */
+
+opttanConfig.defaultDelay = 50; // entspricht 20Hz
+
+/* Minimal Frame-Dauer in ms für die opticTAN-Animation */
+
+opttanConfig.maxDelay = 33; // entspricht 30Hz
+
+/* Vorgabe Größenanpassung für die opticTAN-Animation */
+
+opttanConfig.defaultSize = 0.77;
+
+/* Prefix des Cookies für die Speicherung der Benutzereinstellungen */
+
+opttanConfig.cookiePrefix = 'opttan';
+
+/* Expire des Cookies für Benutzereinstellungen in Sekunden.
+   Wenn gleich 0, so wird Cookie am Ende der Session gelöscht */
+
+opttanConfig.cookieExpire = 60*60*24*365; // 1 Jahr
+
+/* Geschwindigkeit per Button regelbar */
+
+opttanConfig.speedButtons = true;
+
+/* Optionale Id des Hidden-Feldes für Speicherung der Benutzereinstellungen (false = Einstellungen im Cookie speichern) */
+
+opttanConfig.userSettingsId = false;
+
+/* Pfad zu Hintergrund-Bildern */
+
+opttanConfig.customPath = 'custom_images';
+
+/* Pfad zum Image-Ordner */
+
+opttanConfig.imgPath = 'images/';
+
+/* Animation nach Timeout stoppen (Sekunden) */
+
+opttanConfig.animTimeout = 60;
+
+/* Pfad zum 'Play'-Symbol */
+
+opttanConfig.playImage = opttanConfig.imgPath + "rsct_play_big-" + opttanConfig.version + ".png";
+
+/* Warnhinweis ab Größenänderung (in Prozent) gegenüber des Default-Wertes */
+
+opttanConfig.resizeLimit = 50;
+
+/* Warnhinweis Inhalte */
+
+opttanConfig.resizeText = "Mit einer weiteren Vergrößerung der Grafik erhöht sich das Risiko, dass die sich bewegenden Flickerbalken bei einer bestimmten Personengruppe eine Epilepsie auslösen könnten.<br/><br/>Wollen Sie wirklich fortfahren?";
+opttanConfig.resizeOK = "Weiter";
+opttanConfig.resizeCancel = "Abbrechen";
+opttanConfig.resizeImage = opttanConfig.imgPath + "rsct_warning-" + opttanConfig.version + ".png";
+
+/* Button-Texte */
+
+opttanConfig.text.header = "TAN-Generierung mit:";
+// opttanConfig.text.no_cookie = "In Ihrem Browser sind Cookies ausgeschaltet.\nDie Gr&ouml;&szlig;en&auml;nderung kann nur mit eingeschalteten Cookies gespeichert werden.";
+
+opttanConfig.text.fold = "Ein / Ausblenden";
+opttanConfig.text.larger = "Grafik vergr&ouml;&szlig;ern";
+opttanConfig.text.smaller = "Grafik verkleinern";
+opttanConfig.text.faster = "Geschwindigkeit erh&ouml;hen";
+opttanConfig.text.slower = "Geschwindigkeit reduzieren";
+opttanConfig.text.play = "Grafik abspielen";
+opttanConfig.text.pause = "Grafik pausieren";
+opttanConfig.text.rotate = "Grafik drehen";

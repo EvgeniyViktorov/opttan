@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpticTANTestApp", "OpticTANTestApp\OpticTANTestApp.vcproj", "{81C27502-E4C4-482D-9D3F-19D43FF79E21}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00AC5C93-94C4-4AAB-A5B3-70D821271939} = {00AC5C93-94C4-4AAB-A5B3-70D821271939}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpticTANActiveX", "OpticTANActiveX\OpticTANActiveX.vcproj", "{00AC5C93-94C4-4AAB-A5B3-70D821271939}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81C27502-E4C4-482D-9D3F-19D43FF79E21}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81C27502-E4C4-482D-9D3F-19D43FF79E21}.Debug|Win32.Build.0 = Debug|Win32
+		{81C27502-E4C4-482D-9D3F-19D43FF79E21}.Release|Win32.ActiveCfg = Release|Win32
+		{81C27502-E4C4-482D-9D3F-19D43FF79E21}.Release|Win32.Build.0 = Release|Win32
+		{00AC5C93-94C4-4AAB-A5B3-70D821271939}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00AC5C93-94C4-4AAB-A5B3-70D821271939}.Debug|Win32.Build.0 = Debug|Win32
+		{00AC5C93-94C4-4AAB-A5B3-70D821271939}.Release|Win32.ActiveCfg = Release|Win32
+		{00AC5C93-94C4-4AAB-A5B3-70D821271939}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

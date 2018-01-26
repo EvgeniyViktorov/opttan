@@ -1,0 +1,471 @@
+@font-face {
+    font-family: "SparkasseRegular";
+    src: url("/fonts/Sparkasse_Rg.ttf") format("ttf");
+}
+
+body {
+    margin: 0 0 0 0;
+    font-family: "SparkasseRegular", sans-serif;
+    font-size: 1.3em;
+}
+
+#dsv-line {
+    position: fixed;
+    background-color: #ff0000;
+    width: 100%;
+    height: 1.5%;
+    bottom: 97.8%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.50);
+}
+
+#rsct-opttan-button-slower {
+    margin-left: 8%;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px #ffffff;
+    color: #ff0000;
+    font-size: 37px;
+    background: #ffffff;
+    padding: 10px 25px 10px 25px;
+    border: solid #e6e6e6 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#rsct-opttan-button-slower:hover {
+    background: #ebebeb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#rsct-opttan-button-faster {
+    margin-left: 3%;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px #ffffff;
+    color: #ff0000;
+    font-size: 37px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    border: solid #e6e6e6 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#rsct-opttan-button-faster:hover {
+    background: #ebebeb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#rsct-opttan-button-smaller {
+    margin-left: 18%;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px #ffffff;
+    color: #ff0000;
+    font-size: 37px;
+    background: #ffffff;
+    padding: 10px 25px 10px 25px;
+    border: solid #e6e6e6 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#rsct-opttan-button-smaller:hover {
+    background: #ebebeb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#rsct-opttan-button-larger {
+    margin-left: 3%;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px #ffffff;
+    color: #ff0000;
+    font-size: 37px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    border: solid #e6e6e6 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#rsct-opttan-button-larger:hover {
+    background: #ebebeb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#opttan { width: 100%;
+    margin-top: 5%}
+
+#button-names {
+    margin-top: 10%;
+    display: flex;
+}
+
+#button-names #speed {
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+#button-names #zoom {
+    margin-top: 5%;
+    margin-left: 27%;
+}
+
+.rsct-opttan-visible { visibility: visible; }
+
+.rsct-opttan-hidden { visibility: hidden; }
+
+.rsct-opttan-display { display: inherit; }
+
+.rsct-opttan-hide { display: none; }
+
+/* Noscript Gif Opttan */
+#rsct-opttan_m-gif-bg, #rsct-opttan_mr-gif-bg { position: relative; z-index: 0; }
+
+#rsct-opttan_m-gif-app, #rsct-opttan_mr-gif-app { position: absolute; z-index: 1; }
+
+#rsct-opttan_m-gif-bg { width: 6.4cm; height: 3.7cm; }
+
+#rsct-opttan_m-gif-app { margin: 0.6cm; width: 5.2cm; height: 2.5cm; }
+
+#rsct-opttan_mr-gif-bg { width: 3.7cm; height: 7.8cm; }
+
+#rsct-opttan_mr-gif-app { margin: 0.7cm 0.6cm; width: 2.5cm; height: 6.4cm; }
+
+/* Opttan Mini */
+/* Gif */
+#rsct-opttan-gif-app { position: absolute; width: 100%; height: 100%; }
+
+/* Canvas */
+#rsct-opttan-canvas-app { position: absolute; width: 100%; height: 100%; }
+
+/**********************/
+.rsct-opttan_m #rsct-opttan-device { width: 6.4cm; height: 3.7cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-1 { width: 1.6cm; height: 0.925cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-1 #rsct-opttan-speedo { font-size: 10.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-2 { width: 1.8cm; height: 1.04063cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-2 #rsct-opttan-speedo { font-size: 11px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-3 { width: 2cm; height: 1.15625cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-3 #rsct-opttan-speedo { font-size: 11.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-4 { width: 2.2cm; height: 1.27188cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-4 #rsct-opttan-speedo { font-size: 12px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-5 { width: 2.4cm; height: 1.3875cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-5 #rsct-opttan-speedo { font-size: 12.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-6 { width: 2.6cm; height: 1.50313cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-6 #rsct-opttan-speedo { font-size: 13px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-7 { width: 2.8cm; height: 1.61875cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-7 #rsct-opttan-speedo { font-size: 13.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-8 { width: 3cm; height: 1.73438cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-8 #rsct-opttan-speedo { font-size: 14px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-9 { width: 3.2cm; height: 1.85cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-9 #rsct-opttan-speedo { font-size: 14.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-10 { width: 3.4cm; height: 1.96563cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-10 #rsct-opttan-speedo { font-size: 15px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-11 { width: 3.6cm; height: 2.08125cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-11 #rsct-opttan-speedo { font-size: 15.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-12 { width: 3.8cm; height: 2.19688cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-12 #rsct-opttan-speedo { font-size: 16px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-13 { width: 4cm; height: 2.3125cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-13 #rsct-opttan-speedo { font-size: 16.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-14 { width: 4.2cm; height: 2.42813cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-14 #rsct-opttan-speedo { font-size: 17px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-15 { width: 4.4cm; height: 2.54375cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-15 #rsct-opttan-speedo { font-size: 17.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-16 { width: 4.6cm; height: 2.65938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-16 #rsct-opttan-speedo { font-size: 18px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-17 { width: 4.8cm; height: 2.775cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-17 #rsct-opttan-speedo { font-size: 18.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-18 { width: 5cm; height: 2.89063cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-18 #rsct-opttan-speedo { font-size: 19px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-19 { width: 5.2cm; height: 3.00625cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-19 #rsct-opttan-speedo { font-size: 19.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-20 { width: 5.4cm; height: 3.12188cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-20 #rsct-opttan-speedo { font-size: 20px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-21 { width: 5.6cm; height: 3.2375cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-21 #rsct-opttan-speedo { font-size: 20.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-22 { width: 5.8cm; height: 3.35313cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-22 #rsct-opttan-speedo { font-size: 21px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-23 { width: 6cm; height: 3.46875cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-23 #rsct-opttan-speedo { font-size: 21.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-24 { width: 6.2cm; height: 3.58438cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-24 #rsct-opttan-speedo { font-size: 22px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-25 { width: 6.4cm; height: 3.7cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-25 #rsct-opttan-speedo { font-size: 22.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-26 { width: 6.6cm; height: 3.81563cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-26 #rsct-opttan-speedo { font-size: 23px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-27 { width: 6.8cm; height: 3.93125cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-27 #rsct-opttan-speedo { font-size: 23.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-28 { width: 7cm; height: 4.04688cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-28 #rsct-opttan-speedo { font-size: 24px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-29 { width: 7.2cm; height: 4.1625cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-29 #rsct-opttan-speedo { font-size: 24.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-30 { width: 7.4cm; height: 4.27813cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-30 #rsct-opttan-speedo { font-size: 25px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-31 { width: 7.6cm; height: 4.39375cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-31 #rsct-opttan-speedo { font-size: 25.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-32 { width: 7.8cm; height: 4.50938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-32 #rsct-opttan-speedo { font-size: 26px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-33 { width: 8cm; height: 4.625cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-33 #rsct-opttan-speedo { font-size: 26.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-34 { width: 8.2cm; height: 4.74063cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-34 #rsct-opttan-speedo { font-size: 27px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-35 { width: 8.4cm; height: 4.85625cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-35 #rsct-opttan-speedo { font-size: 27.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-36 { width: 8.6cm; height: 4.97188cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-36 #rsct-opttan-speedo { font-size: 28px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-37 { width: 8.8cm; height: 5.0875cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-37 #rsct-opttan-speedo { font-size: 28.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-38 { width: 9cm; height: 5.20313cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-38 #rsct-opttan-speedo { font-size: 29px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-39 { width: 9.2cm; height: 5.31875cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-39 #rsct-opttan-speedo { font-size: 29.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-40 { width: 9.4cm; height: 5.43438cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-40 #rsct-opttan-speedo { font-size: 30px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-41 { width: 9.6cm; height: 5.55cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-41 #rsct-opttan-speedo { font-size: 30.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-42 { width: 9.8cm; height: 5.66563cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-42 #rsct-opttan-speedo { font-size: 31px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-43 { width: 10cm; height: 5.78125cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-43 #rsct-opttan-speedo { font-size: 31.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-44 { width: 10.2cm; height: 5.89688cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-44 #rsct-opttan-speedo { font-size: 32px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-45 { width: 10.4cm; height: 6.0125cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-45 #rsct-opttan-speedo { font-size: 32.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-46 { width: 10.6cm; height: 6.12813cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-46 #rsct-opttan-speedo { font-size: 33px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-47 { width: 10.8cm; height: 6.24375cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-47 #rsct-opttan-speedo { font-size: 33.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-48 { width: 11cm; height: 6.35938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-48 #rsct-opttan-speedo { font-size: 34px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-49 { width: 11.2cm; height: 6.475cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-49 #rsct-opttan-speedo { font-size: 34.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-50 { width: 11.4cm; height: 6.59063cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-50 #rsct-opttan-speedo { font-size: 35px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-51 { width: 11.6cm; height: 6.70625cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-51 #rsct-opttan-speedo { font-size: 35.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-52 { width: 11.8cm; height: 6.82188cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-52 #rsct-opttan-speedo { font-size: 36px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-53 { width: 12cm; height: 6.9375cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-53 #rsct-opttan-speedo { font-size: 36.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-54 { width: 12.2cm; height: 7.05313cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-54 #rsct-opttan-speedo { font-size: 37px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-55 { width: 12.4cm; height: 7.16875cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-55 #rsct-opttan-speedo { font-size: 37.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-56 { width: 12.6cm; height: 7.28438cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-56 #rsct-opttan-speedo { font-size: 38px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-57 { width: 12.8cm; height: 7.4cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-57 #rsct-opttan-speedo { font-size: 38.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-58 { width: 13cm; height: 7.51563cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-58 #rsct-opttan-speedo { font-size: 39px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-59 { width: 13.2cm; height: 7.63125cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-59 #rsct-opttan-speedo { font-size: 39.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-60 { width: 13.4cm; height: 7.74688cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-60 #rsct-opttan-speedo { font-size: 40px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-61 { width: 13.6cm; height: 7.8625cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-61 #rsct-opttan-speedo { font-size: 40.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-62 { width: 13.8cm; height: 7.97813cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-62 #rsct-opttan-speedo { font-size: 41px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-63 { width: 14cm; height: 8.09375cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-63 #rsct-opttan-speedo { font-size: 41.5px; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-64 { width: 14.2cm; height: 8.20938cm; }
+.rsct-opttan_m #rsct-opttan-device.rsct-opttan-size-64 #rsct-opttan-speedo { font-size: 42px; }
+.rsct-opttan_m #rsct-opttan-clk1, .rsct-opttan_m #rsct-opttan-data0, .rsct-opttan_m #rsct-opttan-data1, .rsct-opttan_m #rsct-opttan-data2, .rsct-opttan_m #rsct-opttan-data3, .rsct-opttan_m #rsct-opttan-app-slower, .rsct-opttan_m #rsct-opttan-app-faster { width: 16%; margin: 0 2%; height: 100%; }
+.rsct-opttan_m #rsct-opttan-data0 { left: 20%; }
+.rsct-opttan_m #rsct-opttan-data1 { left: 40%; }
+.rsct-opttan_m #rsct-opttan-data2 { left: 60%; }
+.rsct-opttan_m #rsct-opttan-data3, .rsct-opttan_m #rsct-opttan-app-faster { left: 80%; }
+.rsct-opttan_m #rsct-opttan-app, .rsct-opttan_m #rsct-opttan-app-controls { position: absolute; top: 16%; left: 9.5%; width: 81%; height: 68%; }
+.rsct-opttan_m .rsct-opttan_m-hide { display: none; }
+
+/* Opttan Mini Rotated */
+.rsct-opttan_mr #rsct-opttan-device { width: 3.7cm; height: 7.8cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-1 { width: 0.925cm; height: 1.95cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-1 #rsct-opttan-speedo { font-size: 10.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-2 { width: 1.04063cm; height: 2.19375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-2 #rsct-opttan-speedo { font-size: 11px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-3 { width: 1.15625cm; height: 2.4375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-3 #rsct-opttan-speedo { font-size: 11.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-4 { width: 1.27188cm; height: 2.68125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-4 #rsct-opttan-speedo { font-size: 12px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-5 { width: 1.3875cm; height: 2.925cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-5 #rsct-opttan-speedo { font-size: 12.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-6 { width: 1.50313cm; height: 3.16875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-6 #rsct-opttan-speedo { font-size: 13px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-7 { width: 1.61875cm; height: 3.4125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-7 #rsct-opttan-speedo { font-size: 13.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-8 { width: 1.73438cm; height: 3.65625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-8 #rsct-opttan-speedo { font-size: 14px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-9 { width: 1.85cm; height: 3.9cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-9 #rsct-opttan-speedo { font-size: 14.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-10 { width: 1.96563cm; height: 4.14375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-10 #rsct-opttan-speedo { font-size: 15px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-11 { width: 2.08125cm; height: 4.3875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-11 #rsct-opttan-speedo { font-size: 15.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-12 { width: 2.19688cm; height: 4.63125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-12 #rsct-opttan-speedo { font-size: 16px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-13 { width: 2.3125cm; height: 4.875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-13 #rsct-opttan-speedo { font-size: 16.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-14 { width: 2.42813cm; height: 5.11875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-14 #rsct-opttan-speedo { font-size: 17px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-15 { width: 2.54375cm; height: 5.3625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-15 #rsct-opttan-speedo { font-size: 17.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-16 { width: 2.65938cm; height: 5.60625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-16 #rsct-opttan-speedo { font-size: 18px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-17 { width: 2.775cm; height: 5.85cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-17 #rsct-opttan-speedo { font-size: 18.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-18 { width: 2.89063cm; height: 6.09375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-18 #rsct-opttan-speedo { font-size: 19px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-19 { width: 3.00625cm; height: 6.3375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-19 #rsct-opttan-speedo { font-size: 19.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-20 { width: 3.12188cm; height: 6.58125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-20 #rsct-opttan-speedo { font-size: 20px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-21 { width: 3.2375cm; height: 6.825cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-21 #rsct-opttan-speedo { font-size: 20.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-22 { width: 3.35313cm; height: 7.06875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-22 #rsct-opttan-speedo { font-size: 21px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-23 { width: 3.46875cm; height: 7.3125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-23 #rsct-opttan-speedo { font-size: 21.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-24 { width: 3.58438cm; height: 7.55625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-24 #rsct-opttan-speedo { font-size: 22px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-25 { width: 3.7cm; height: 7.8cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-25 #rsct-opttan-speedo { font-size: 22.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-26 { width: 3.81563cm; height: 8.04375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-26 #rsct-opttan-speedo { font-size: 23px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-27 { width: 3.93125cm; height: 8.2875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-27 #rsct-opttan-speedo { font-size: 23.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-28 { width: 4.04688cm; height: 8.53125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-28 #rsct-opttan-speedo { font-size: 24px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-29 { width: 4.1625cm; height: 8.775cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-29 #rsct-opttan-speedo { font-size: 24.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-30 { width: 4.27813cm; height: 9.01875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-30 #rsct-opttan-speedo { font-size: 25px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-31 { width: 4.39375cm; height: 9.2625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-31 #rsct-opttan-speedo { font-size: 25.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-32 { width: 4.50938cm; height: 9.50625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-32 #rsct-opttan-speedo { font-size: 26px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-33 { width: 4.625cm; height: 9.75cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-33 #rsct-opttan-speedo { font-size: 26.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-34 { width: 4.74063cm; height: 9.99375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-34 #rsct-opttan-speedo { font-size: 27px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-35 { width: 4.85625cm; height: 10.2375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-35 #rsct-opttan-speedo { font-size: 27.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-36 { width: 4.97188cm; height: 10.48125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-36 #rsct-opttan-speedo { font-size: 28px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-37 { width: 5.0875cm; height: 10.725cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-37 #rsct-opttan-speedo { font-size: 28.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-38 { width: 5.20313cm; height: 10.96875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-38 #rsct-opttan-speedo { font-size: 29px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-39 { width: 5.31875cm; height: 11.2125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-39 #rsct-opttan-speedo { font-size: 29.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-40 { width: 5.43438cm; height: 11.45625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-40 #rsct-opttan-speedo { font-size: 30px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-41 { width: 5.55cm; height: 11.7cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-41 #rsct-opttan-speedo { font-size: 30.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-42 { width: 5.66563cm; height: 11.94375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-42 #rsct-opttan-speedo { font-size: 31px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-43 { width: 5.78125cm; height: 12.1875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-43 #rsct-opttan-speedo { font-size: 31.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-44 { width: 5.89688cm; height: 12.43125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-44 #rsct-opttan-speedo { font-size: 32px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-45 { width: 6.0125cm; height: 12.675cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-45 #rsct-opttan-speedo { font-size: 32.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-46 { width: 6.12813cm; height: 12.91875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-46 #rsct-opttan-speedo { font-size: 33px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-47 { width: 6.24375cm; height: 13.1625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-47 #rsct-opttan-speedo { font-size: 33.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-48 { width: 6.35938cm; height: 13.40625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-48 #rsct-opttan-speedo { font-size: 34px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-49 { width: 6.475cm; height: 13.65cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-49 #rsct-opttan-speedo { font-size: 34.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-50 { width: 6.59063cm; height: 13.89375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-50 #rsct-opttan-speedo { font-size: 35px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-51 { width: 6.70625cm; height: 14.1375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-51 #rsct-opttan-speedo { font-size: 35.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-52 { width: 6.82188cm; height: 14.38125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-52 #rsct-opttan-speedo { font-size: 36px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-53 { width: 6.9375cm; height: 14.625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-53 #rsct-opttan-speedo { font-size: 36.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-54 { width: 7.05313cm; height: 14.86875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-54 #rsct-opttan-speedo { font-size: 37px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-55 { width: 7.16875cm; height: 15.1125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-55 #rsct-opttan-speedo { font-size: 37.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-56 { width: 7.28438cm; height: 15.35625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-56 #rsct-opttan-speedo { font-size: 38px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-57 { width: 7.4cm; height: 15.6cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-57 #rsct-opttan-speedo { font-size: 38.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-58 { width: 7.51563cm; height: 15.84375cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-58 #rsct-opttan-speedo { font-size: 39px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-59 { width: 7.63125cm; height: 16.0875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-59 #rsct-opttan-speedo { font-size: 39.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-60 { width: 7.74688cm; height: 16.33125cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-60 #rsct-opttan-speedo { font-size: 40px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-61 { width: 7.8625cm; height: 16.575cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-61 #rsct-opttan-speedo { font-size: 40.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-62 { width: 7.97813cm; height: 16.81875cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-62 #rsct-opttan-speedo { font-size: 41px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-63 { width: 8.09375cm; height: 17.0625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-63 #rsct-opttan-speedo { font-size: 41.5px; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-64 { width: 8.20938cm; height: 17.30625cm; }
+.rsct-opttan_mr #rsct-opttan-device.rsct-opttan-size-64 #rsct-opttan-speedo { font-size: 42px; }
+.rsct-opttan_mr #rsct-opttan-app-button-start { display: none; top: 40%; height: 20%; }
+.rsct-opttan_mr #rsct-opttan-app, .rsct-opttan_mr #rsct-opttan-app-controls { position: absolute; top: 8%; left: 16%; width: 67%; height: 84%; }
+.rsct-opttan_mr #rsct-opttan-clk1, .rsct-opttan_mr #rsct-opttan-data0, .rsct-opttan_mr #rsct-opttan-data1, .rsct-opttan_mr #rsct-opttan-data2, .rsct-opttan_mr #rsct-opttan-data3, .rsct-opttan_mr #rsct-opttan-app-slower, .rsct-opttan_mr #rsct-opttan-app-faster { width: 100%; margin: 4% 0 0 0; height: 16%; }
+.rsct-opttan_mr #rsct-opttan-data3 { top: 0%; }
+.rsct-opttan_mr #rsct-opttan-data2 { top: 20%; }
+.rsct-opttan_mr #rsct-opttan-data1 { top: 40%; }
+.rsct-opttan_mr #rsct-opttan-data0 { top: 60%; }
+.rsct-opttan_mr #rsct-opttan-clk1, .rsct-opttan_mr #rsct-opttan-app-slower { top: 80%; }
+.rsct-opttan_mr .rsct-opttan_mr-hide { display: none; }
+
+/* Common */
+#rsct-opttan-app #rsct-opttan-clk1, #rsct-opttan-app #rsct-opttan-data0, #rsct-opttan-app #rsct-opttan-data1, #rsct-opttan-app #rsct-opttan-data2, #rsct-opttan-app #rsct-opttan-data3 { position: absolute; background: #fff; }
+
+#rsct-opttan-app-slower, #rsct-opttan-app-faster { position: absolute; cursor: pointer; z-index: 13; /* Fix IE 8-10 */ background: #000; opacity: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
+
+/* Other */
+#rsct-opttan-device { position: relative; margin: 5% auto; z-index: 2; }
+
+#rsct-opttan-bg-image {  width: 100%; height: 100%; }
+
+#rsct-opttan-app-button-start { position: absolute; left: 0; width: 100%; text-align: center; top: 25%; height: 50%; }
+#rsct-opttan-app-button-start img { height: 100%; cursor: pointer; }
+
+.rsct-opttan_m-hide, .rsct-opttan_mr-hide { display: none; }
+
+#rsct-opttan-resize-warning { position: absolute; left: 0; top: 0; width: 100%; min-height: 100%; background: #fff; font-size: 12px; text-align: left; z-index: 15; }
+#rsct-opttan-resize-warning img { display: block; float: left; width: 20%; margin-top: 1em; }
+#rsct-opttan-resize-warning p { display: block; position: relative; float: right; width: 70%; margin: 1em 0 0 0; padding: 0 0.5em 0 0; }
+#rsct-opttan-resize-warning #rsct-opttan-warning-ok, #rsct-opttan-resize-warning #rsct-opttan-warning-cancel { border: 1px solid #333; padding: 2px; margin: 2px; float: right; text-decoration: none; color: #000; cursor: pointer; }
+#rsct-opttan-resize-warning #rsct-opttan-warning-ok { border: 1px solid #33f; }
+
+/* Application */
+#rsct-opttan-button-unfold { display: none; }
+
+.rsct-opttan-fold #rsct-opttan-area, .rsct-opttan-fold #rsct-opttan-titlebar-left, .rsct-opttan-fold #rsct-opttan-button-fold { display: none; }
+.rsct-opttan-fold #rsct-opttan-button-unfold { display: none; }
+/*#rsct-opttan-titlebar-left {display: inline;*/
+    /*margin: 0 auto;}*/
+#rsct-opttan-app, #rsct-opttan-button-stop { display: none; /* Fix IE 8 compatibility mode bug */ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
+
+.rsct-opttan-running #rsct-opttan-app { display: block; filter: none; }
+.rsct-opttan-running #rsct-opttan-button-stop { display: none; }
+.rsct-opttan-running #rsct-opttan-app-button-start, .rsct-opttan-running #rsct-opttan-button-start, .rsct-opttan-running #rsct-opttan-resize-warning { display: none; }
+
+#rsct-opttan-generation { background-color: #ffffff; border-collapse: collapse; width: 100%; border: 1px solid #ff0000; }
+#rsct-opttan-generation td { border: 1px solid #ffffff; vertical-align: top; padding: 6px; margin: 0; background-color: black}
+
+#rsct-opttan-generation .rsct-opttan-titlebar { margin-top: 2%; padding: 0; font-weight: bold; background: #ffffff; }
+#rsct-opttan-generation .rsct-opttan-titlebar .rsct-opttan-titlebar-inner { padding: 0 0 0 4px; background: #ffffff; /* Old browsers */ background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 70%, #e6e6e6 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(70%, #e6e6e6), color-stop(100%, #e6e6e6)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 70%, #e6e6e6 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 70%, #e6e6e6 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6 70%, #e6e6e6 100%); /* IE10+ */ background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 70%, #e6e6e6 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */ /* Fix IE 8 */ zoom: 1; }
+#rsct-opttan-generation .rsct-opttan-titlebar img { margin: 2px; border: 1px solid #3c3c3c; cursor: pointer; }
+#rsct-opttan-generation .rsct-opttan-titlebar img:active { border: 1px solid #3c3c3c; }
+
+#rsct-opttan-titlebar-right { float: right; }
+
+/*#rsct-opttan-titlebar-left { float: left; }*/
+
+#rsct-opttan-speedo { position: absolute; bottom: 40%; z-index: 12; font: bold 1em Arial; text-align: center; color: #fc0; width: 100%; margin: 0 auto; pointer-events: none; }

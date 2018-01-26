@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Opttan Example</title>
+  <script src="../rsct_opttan/js/opttan_code.js" type="text/javascript"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+  // Datenstring-Berechnung HHD 1.4
+  var f = rsct.Opttan;
+  f.setStartCode("104");
+  f.setBde1("1234567");
+  f.setBde2("10,01");
+  f.setBde3("123");
+  document.write("HHD 1.4: " + f.getCode() + "<br />");
+
+  // HHD 1.3
+  f.setVersion(3);
+  document.write("HHD 1.3: " + f.getCode() + "<br />");
+
+  // Datenstring-Berechnung aus FinTS Daten
+  var f2 = rsct.Opttan;
+  f2.setFinTSData("0448A012045201998081234567808123456780812345678");
+  f.setVersion(4);
+  document.write("HHD 1.4 FinTS: " + f2.getCode() + "<br />");
+  
+  // Datenstring-Berechnung aus FinTS Daten
+  var f3 = rsct.Opttan;
+  f3.setFinTSData("24088712529006199992041,00");
+  f3.setVersion(3);
+  document.write("HHD 1.3 FinTS: " + f3.getCode() + "<br />");
+
+  // Exception handling
+  var f4 = rsct.Opttan;
+  f3.setFinTSData("");
+  f4.setStartCode("12345678901234");
+  f4.setBde1("12345678901234");
+  f4.setBde2("12345678901234");
+  f4.setVersion(3);
+  try {
+    f4.getCode();
+  } catch (e) {
+    document.write("Exception: " + e + "<br />");
+  }
+  
+</script>
+
+</div>
+</body>
+</html>
