@@ -390,7 +390,7 @@ RsctOpttan.Opttan = function (data, opttan_path, type) {
         if (!newwidth) return false;
         //if (!document.getElementById('rsct-opttan-app')) return false;
         if (newwidth < 1) return true;
-        if (newwidth > 64) return true;
+        if (newwidth > 78) return true;
 
         newwidth = Math.round(newwidth);
 
@@ -640,7 +640,7 @@ RsctOpttan.Opttan = function (data, opttan_path, type) {
         this.app.setDevice(device);
 
         // reset width and height
-        var startSize = 33; //FIXME
+        var startSize = 70;
         var elem = document.getElementById('rsct-opttan-device');
         elem.className = "rsct-opttan-size-" + startSize;
 
